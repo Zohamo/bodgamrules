@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Civilization : Une aube nouvelle | Règles rapides</title>
+    <meta
+      name="keywords"
+      content="Civilization, Une aube nouvelle, rappel, règles, rapides, documentation"
+    />
+    <meta
+      name="description"
+      content="Règles rapides de Civilization : Une aube nouvelle"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./css/picnic.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <style>
+      .fas {
+        display: inline-block;
+        content: "";
+        background: transparent no-repeat 50%;
+        margin-right: 0.3rem;
+      }
+      .d-flex,
+      aside .pseudo.button {
+        display: flex !important;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="#" class="brand">
+        <h1>Civilization&nbsp;: <small>Une aube nouvelle</small></h1>
+      </a>
+
+      <input id="bmenub" type="checkbox" class="show" />
+      <label for="bmenub" class="burger pseudo button">menu</label>
+
+      <div class="menu">
+        <a class="button" disabled href="./quick-rules.html">Règles rapides</a>
+      </div>
+    </nav>
+
+    <main id="main">
+      <section class="flex five" style="margin-top: 50px;">
+        <aside class="full fifth-1000">
+          <div class="links flex two three-500 five-800 one-1000">
+            <div>
+              <a class="pseudo button" href="#army"
+                ><i class="fas fa-shield-alt"></i> Armée</a
+              >
+            </div>
+          </div>
+          <div>
+            <a class="pseudo button" href="#science"
+              ><i class="fas fa-flask"></i> Science</a
+            >
+          </div>
+        </div>
+          <a href="#main" tabindex="-1" class="top pseudo button">▲</a>
+        </aside>
+
+        <section class="full four-fifth-1000">
+          <section id="army">
+            <h2 class="d-flex"><i class="fas fa-shield-alt"></i> Armée</h2>
+
+            <h3>Mener des attaques</h3>
+
+            <p>
+              Il ne peut pas y avoir de cases d'eau, de cases rivales ou de
+              pions Barbare entre la case alliée et la cible.<br />
+              Tous les autres terrains, quel que soit l'échelon de la
+              <span class="color-red">carte de Priorité Armée</span>, peuvent
+              être traversés.
+            </p>
+            <p>
+              Le joueur ne peut pas attaquer depuis une case qu'il a attaquée et
+              dont il a pris le contrôle durant ce même tour.
+            </p>
+
+            <article class="card">
+              <header>
+                <h4 class="d-flex"><i class="fas fa-fist-raised"></i> Force de l'attaquant</h4>
+              </header>
+              <p>
+                = échelon de sa
+                <span class="color-red">carte de Priorité Armée</span><br />
+                + résultat de son <strong>Dé</strong><br />
+                + bonus de <strong>cartes/dirigeant</strong><br />
+                <a href="#army-trade-tokens"><small>+ pions commerce</small></a>
+              </p>
+            </article>
+
+            <article class="card">
+              <header>
+                <h4 class="d-flex"><i class="fas fa-fist-raised"></i> Force du défenseur</h4>
+              </header>
+
+              <ul>
+                <li>
+                  <ins>Pion Barbare</ins><br />
+                  = résultat du <strong>Dé</strong><br />
+                  + bonus égal à la <strong>difficulté du terrain</strong> de la
+                  case qu'il défend
+                </li>
+                <li>
+                  <ins>Cité-état</ins><br />
+                  = résultat du <strong>Dé</strong><br />
+                  + <strong>bonus de 8</strong>
+                </li>
+                <li>
+                  <ins>Pion contrôle</ins><br />
+                  = résultat du <strong>Dé</strong><br />
+                  + bonus égal à la <strong>difficulté du terrain</strong> de la
+                  case qu'il défend<br />
+                  + 1 si ce pion contrôle est <strong>renforcé</strong><br />
+                  + 1 par <strong>pion Contrôle renforcé adjacent</strong> à
+                  celui-ci<br />
+                  + bonus de <strong>cartes/dirigeant</strong><br />
+                  <a href="#army-trade-tokens"
+                    ><small>+ pions commerce</small></a
+                  >
+                </li>
+                <li>
+                  <ins>Ville</ins><br />
+                  = résultat du <strong>Dé</strong><br />
+                  + bonus égal au <strong>double</strong> de la
+                  <strong>difficulté du terrain</strong> de la case qu'elle
+                  défend<br />
+                  + 1 par <strong>pion Contrôle renforcé adjacent</strong> à
+                  celle-ci<br />
+                  + bonus de <strong>cartes/dirigeant</strong><br />
+                  <a href="#army-trade-tokens"
+                    ><small>+ pions commerce</small></a
+                  >
+                </li>
+              </ul>
+            </article>
+
+            <article id="army-trade-tokens" class="card">
+              <header>
+                <h4 class="d-flex"><i class="fas fa-box-open"></i> Pions commerce</h4>
+              </header>
+
+              <p>
+                Une fois les valeurs de Combat déterminées, l'attaquant peut
+                dépenser des <strong>pions Commerce</strong> de sa
+                <span class="color-red">carte Armée</span>. Ensuite, le
+                défenseur peut faire de même. Pour chaque pion ainsi dépensé,
+                chaque joueur accroît sa Valeur de Combat de 1.
+              </p>
+            </article>
+
+            <p>En cas d'égalité c'est le défenseur qui l'emporte.</p>
+            <ul>
+              <li><ins>Si le défenseur gagne</ins>, rien ne se passe.</li>
+              <li>
+                <ins>Si l'attaquant gagne</ins>, l'effet dépend de la cible de
+                l'attaque&nbsp;:
+              </li>
+            </ul>
+
+            <article class="card">
+              <header>
+                <h4 class="d-flex"><i class="fas fa-flag"></i> Victoire de l'attaquant</h4>
+              </header>
+
+              <ul>
+                <li>
+                  <ins>Pion Barbare</ins>
+                  <ul>
+                    <li>
+                      Le pion Barbare est retiré du plateau et l'attaquant peut
+                      placer un <strong>pion Commerce</strong> sur sa
+                      <span class="color-red">carte Armée</span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ins>Cité-état</ins>
+                  <ul>
+                    <li>
+                      L'attaquant conquiert la cité-état en plaçant le
+                      <strong>pion cité-état</strong> sur la
+                      <strong>carte du même type</strong> dans son échelle.
+                    </li>
+                    <li>
+                      Il place ensuite <strong>une de ses villes</strong> sur la
+                      case de la cité-état.
+                    </li>
+                    <li>
+                      Les <strong>deux cartes Diplomatie</strong> sont placées
+                      face cachée contre le bord du plateau.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ins>Pion contrôle</ins>
+                  <ul>
+                    <li>
+                      L'attaquant remplace le <strong>pion Contrôle</strong> par
+                      une des siens non encore utilisé, face
+                      <em>non-renforcé</em> visible.
+                    </li>
+                    <li>
+                      Si le pion se trouve sur une case
+                      <strong>Merveille de la nature</strong>, l'attaquant prend
+                      au défenseur le pion de cette Merveille.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ins>Ville non-capitale</ins><br />
+                  <ul>
+                    <li>
+                      L'attaquant <strong>remplace la ville</strong> par une de
+                      ses villes non encore utilisées.
+                    </li>
+                    <li>
+                      Si la ville était une case de <strong>cité-état</strong>,
+                      l'attaquant peut la conquérir ou la libérer.
+                    </li>
+                    <li>
+                      Si la case contient une
+                      <strong>Merveille du Monde</strong>, ce pion reste sur la
+                      case et l'attaquant prend la carte Merveille
+                      correspondante.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ins>Capitale</ins>
+                  <ul>
+                    <li>
+                      L'attaquant prend jusqu'à
+                      <strong>deux pions Commerce</strong> des cartes de
+                      priorité du défenseur, et les place comme il le souhaite
+                      sur ses propres cartes de Priorité.
+                    </li>
+                    <li>
+                      Si la case contient une
+                      <strong>Merveille du Monde</strong>, l'attaquant doit
+                      déplacer le pion Merveille sous une autre de ses villes.
+                      <small
+                        >Si toutes ses autres villes contiennent déjà un pion
+                        Merveille, l'attaquant ne peut prendre ni la carte
+                        Merveille, ni le pion Merveille.</small
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </article>
+          </section>
+          
+          <section id="science">
+                <h2 class="d-flex"><i class="fas fa-flask"></i> Science</h2>
+
+                <p>Si le cadran de Tech d'un joueur dépasse 24, placez-le sur le cran 15.
+                    Le curseur avancera à nouveau jusqu'à 24, et le joueur pourra gagner de nouvelles <strong>cartes de Priorité</strong> de Niveau IV.
+                </p>
+            </section>
+        </section>
+      </section>
+    </main>
+
+
+    <script type="text/javascript">
+      const iconsPath = "./img/icons/";
+      const fas = document.getElementsByClassName("fas");
+      for (var i = 0, element; (element = fas[i]); i++) {
+        const height = parseFloat(getComputedStyle(element.parentElement).height)
+            - parseFloat(getComputedStyle(element.parentElement).paddingTop)
+            - parseFloat(getComputedStyle(element.parentElement).paddingBottom) + "px";
+        element.classList.forEach(classItem => {
+          if (classItem.startsWith("fa-")) {
+            const icon = classItem.slice(3);
+            element.style.backgroundImage =
+              "url('" + iconsPath + icon + ".svg')";
+            element.style.height = height;
+            element.style.width = height;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
